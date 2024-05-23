@@ -99,8 +99,6 @@ jobs:
     - name: Initialize repo
       run: |
         mkdir workspace
-        tree -L 3
-        exit 0 #debug
         cd workspace
         echo "workspace-folder=$(pwd)" >> $GITHUB_OUTPUT
         git config --global user.name "azwhikaru"
